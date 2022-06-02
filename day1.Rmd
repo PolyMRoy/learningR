@@ -39,4 +39,10 @@ poumitroy = function(x, a, b) {
 }
 curve(expr = poumitroy(x, a = 1, b = 1), from = -10, to = 10, col = 1)
 curve(expr = poumitroy(x, a = 2, b = 0.5), add = TRUE, col = 2)
+pkroy = function(x, a, b) {
+  y = a*x^2 + b
+  return(y)
+}
+curve(expr = pkroy(x, a = 5, b = -3), from = -2, to = 2, col = "green")
+curve(expr = pkroy(x, a = 2, b = 2), col = "red", add = TRUE)
 ```
